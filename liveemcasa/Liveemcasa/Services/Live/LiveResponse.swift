@@ -7,12 +7,12 @@
 //
 
 import Foundation
-import Mapper
+//import Mapper
 
-struct LiveResponse: Mappable, Decodable {
+struct LiveResponse: Decodable {
     let lives: [Live]
 
-    init(map: Mapper) throws {
+    /* init(map: Mapper) throws {
       try lives = map.from("lives")
-    }
+    } */
 }

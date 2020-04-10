@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (5.0.5)
   - Firebase/Analytics (6.21.0):
     - Firebase/Core
   - Firebase/Core (6.21.0):
@@ -60,41 +59,22 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.5.2):
     - GoogleUtilities/Logger
-  - ModelMapper (10.0.0):
-    - ModelMapper/Core (= 10.0.0)
-  - ModelMapper/Core (10.0.0)
-  - Moya (14.0.0):
-    - Moya/Core (= 14.0.0)
-  - Moya-ModelMapper (10.0.0):
-    - Moya-ModelMapper/Core (= 10.0.0)
-  - Moya-ModelMapper/Core (10.0.0):
-    - ModelMapper (~> 10.0)
-    - Moya (~> 14.0)
-  - Moya/Core (14.0.0):
-    - Alamofire (~> 5.0)
-  - Moya/RxSwift (14.0.0):
-    - Moya/Core
-    - RxSwift (~> 5.0)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
   - PromisesObjC (1.2.8)
-  - RxSwift (5.1.1)
   - SDWebImage (5.7.0):
     - SDWebImage/Core (= 5.7.0)
   - SDWebImage/Core (5.7.0)
 
 DEPENDENCIES:
   - Firebase/Analytics
-  - Moya-ModelMapper (~> 10.0)
-  - Moya/RxSwift (~> 14.0)
   - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
-    - Alamofire
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -105,16 +85,11 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
-    - ModelMapper
-    - Moya
-    - Moya-ModelMapper
     - nanopb
     - PromisesObjC
-    - RxSwift
     - SDWebImage
 
 SPEC CHECKSUMS:
-  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
   Firebase: f378c80340dd41c0ad0914af740c021eb282a04b
   FirebaseAnalytics: a1a0b3327ceb5cd5b4bacffdb293f6c909aa087d
   FirebaseCore: 9f495d3afacb7b558711e6218ebb14b1c51b5802
@@ -125,14 +100,10 @@ SPEC CHECKSUMS:
   GoogleDataTransport: b29a21d813e906014ca16c00897827e40e4a24ab
   GoogleDataTransportCCTSupport: 6f15a89b0ca35d6fa523e1f752ef818588885988
   GoogleUtilities: ad0f3b691c67909d03a3327cc205222ab8f42e0e
-  ModelMapper: a8dbf2a2003bf626627b9fe7c9a22b3405a30404
-  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
-  Moya-ModelMapper: e3a478500921e7299804dc1ac550f1ebf3228ade
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
-  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SDWebImage: a99471f452bdfa0ca52ddf5b1adf2b61cab1d1eb
 
-PODFILE CHECKSUM: 1a846ad09b142b97d557b165067dce2d5b2335c1
+PODFILE CHECKSUM: fb55ef6523e66387f8d373cf9d74d4c5fa407151
 
 COCOAPODS: 1.8.4

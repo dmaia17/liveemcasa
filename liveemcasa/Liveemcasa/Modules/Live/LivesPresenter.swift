@@ -82,16 +82,6 @@ extension LivesPresenter: LivesPresenterInterface {
   }
 }
 
-extension LivesPresenter: GetLivesInteractorProtocol {
-  func getLivesSuccess(success: [Live]) {
-    self.bindLives(lives: success)
-  }
-  
-  func getLivesError(error: Error) {
-    view?.showPlaceholderScreenError()
-  }
-}
-
 extension LivesPresenter: NetworkingInteractorResponse {
   func networkingAvailable() {
     self.interactor.getLives()
@@ -99,6 +89,20 @@ extension LivesPresenter: NetworkingInteractorResponse {
 
   func networkingNotAvailable() {
     self.wireframe.navigate(to: .showConnectionErrorAlert)
+  }
+}
+
+extension LivesPresenter: GetLivesInteractorProtocol {
+  func getLivesSuccess(success: [Live]) {
+    DispatchQueue.main.async {
+      self.bindLives(lives: success)
+    }
+  }
+  
+  func getLivesError(error: Error) {
+    DispatchQueue.main.async {
+      self.view?.showPlaceholderScreenError()
+    }
   }
 }
 

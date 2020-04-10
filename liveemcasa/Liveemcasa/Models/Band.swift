@@ -5,27 +5,14 @@
 //  Created by Daniel Maia dos Passos on 04/04/20.
 //  Copyright © 2020 Daniel Maia dos Passos. All rights reserved.
 //
-
-import Mapper
  
-struct Band: Mappable, Decodable {
+struct Band: Decodable {
   var id: Int = 0
   var name: String = ""
-  var bucketFile: BucketFile // = BucketFile()
-  
-  init(map: Mapper) throws {
-    try id = map.from("id")
-    try name = map.from("name")
-    try bucketFile = map.from("bucketFile")
-  }
+  var bucketFile: BucketFile
 }
 
-struct BucketFile: Mappable, Decodable {
+struct BucketFile: Decodable {
   let id: Int
   var preSignedUrl: String = ""
-
-  init(map: Mapper) throws {
-    try id = map.from("id")
-    try preSignedUrl = map.from("preSignedUrl")
-  }
 }

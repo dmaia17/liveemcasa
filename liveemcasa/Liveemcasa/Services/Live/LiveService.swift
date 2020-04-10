@@ -6,6 +6,7 @@
 //  Copyright © 2020 Daniel Maia dos Passos. All rights reserved.
 //
 
+/*
 import Foundation
 import Moya
 
@@ -42,4 +43,4 @@ extension LiveService: TargetType {
   public var validationType: ValidationType {
     return .successCodes
   }
-}
+}*/
